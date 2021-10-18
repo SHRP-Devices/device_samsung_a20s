@@ -42,7 +42,6 @@ ENABLE_SCHEDBOOST := true
 TARGET_OTA_ASSERT_DEVICE := a20s
 
 # Kernel: Base flags
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkboot/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_serial_dm,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true androdboot.selinux=permissive
 BOARD_BOOTIMG_HEADER_VERSION := 1
 
@@ -151,7 +150,7 @@ TARGET_USES_LOGD := true
 # Device codename
 SHRP_DEVICE_CODE := a20s
 SHRP_PATH := device/samsung/a20s
-SHRP_MAINTAINER := Velosh
+SHRP_MAINTAINER := dotA
 SHRP_REC_TYPE := SAR
 SHRP_DEVICE_TYPE := A_only
 SHRP_OFFICIAL := true
